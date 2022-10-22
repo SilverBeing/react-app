@@ -3,13 +3,12 @@ import "./formInput.css";
 
 function FormInputs(props) {
 	const [focused, setFocused] = useState(false);
-	const { label, onChange, id, errormessage, ...inputProps } = props;
+	const { onChange, id, errormessage, ...inputProps } = props;
 	const handleFocus = (e) => {
 		setFocused(true);
 	};
 	return (
 		<div className="formInput">
-			{/* <label>{label}</label> */}
 			<input
 				{...inputProps}
 				onChange={onChange}
