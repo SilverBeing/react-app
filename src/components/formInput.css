@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+input{
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: none;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.2);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    caret-color: orange;
+}
+
+label{
+    margin: 5px 0px;
+}
+span{
+    color: red;
+    font-size: 10px;
+    display: none;
+}
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+input:invalid[focused="true"]~ span{
+    display: block
+}
